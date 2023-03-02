@@ -5,7 +5,7 @@ import javax.inject.Inject
 import javax.inject.Named
 
 class MainActivityPresenter @Inject constructor(
-    @Named("email") private val notificationService: NotificationService,
+    @Named("message") private val notificationService: NotificationService,
     private val userRepository: UserRepository
 ) {
 

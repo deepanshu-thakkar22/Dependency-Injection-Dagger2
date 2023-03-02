@@ -18,8 +18,8 @@ class NotificationServiceModule {
 
     @Named("message")
     @Provides
-    fun getMessageService(messageService: MessageService):NotificationService{
-        return messageService
+    fun getMessageService(retryCount:Int):NotificationService{
+        return MessageService(retryCount)
     }
 
 }
