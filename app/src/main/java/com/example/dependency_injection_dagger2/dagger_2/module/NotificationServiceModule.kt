@@ -6,6 +6,7 @@ import com.example.dependency_injection_dagger2.service.NotificationService
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named
+import javax.inject.Singleton
 
 @Module
 class NotificationServiceModule {
